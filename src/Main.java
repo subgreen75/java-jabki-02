@@ -57,7 +57,7 @@ public class Main {
         System.out.println("А еще " + "можно так " + x );
         System.out.printf("Привет, меня зовут %s и я люблю %s\n", name, "маму" );
 
-        int oldNumber = 4;
+        int oldNumber = 5;
         System.out.printf("Число четное? %s\n",oldNumber % 2 == 0);
 
         System.out.println("* * *");
