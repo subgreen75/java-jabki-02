@@ -131,7 +131,7 @@ public class Main {
             System.out.println("Подходит для аренды");
         }
 
-        a = 1;
+        a = 0;
         String result = a > 0 ? "а положительное число" : (a == 0 ? "равно 0" : "a отрицательное число");
         System.out.println(result);
 
@@ -263,17 +263,17 @@ public class Main {
         /**
          * Выведите в консоль квадрат
          */
-        System.out.println("квадрат");
+        System.out.println("\u25A0");
 
         /**
          * Выведите в консоль полый квадрат
          */
-        System.out.println("полый квадрат");
+        System.out.println("\u25A1");
 
         /**
          * Выведите в консоль ромб
          */
-        System.out.println("ромб");
+        System.out.println("\u25C6");
 
         /**
          * Выведите в консоль смайлик
@@ -429,7 +429,7 @@ public class Main {
                 System.out.println("Отлично");
                 break;
             default:
-                System.out.println("Хорошая попытка. Давай подумаем из ты страны?");
+                System.out.println("Хорошая попытка. Давай подумаем из какой ты страны?");
         }
 
         /**
@@ -437,9 +437,10 @@ public class Main {
          * 1. Дан список чисел. Посчитайте сумму всех четных элементов
          */
         int lSum = 0;
-        for (int i = 0; i < 10; i++) {
+        int[] lNumbers = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+        for (int i = 0; i < lNumbers.length; i++) {
             if (i % 2 == 0) {
-                lSum = lSum + i;
+                lSum = lSum + lNumbers[i];
             }
 
         }
@@ -450,9 +451,10 @@ public class Main {
          * 2. Дан список чисел. Найдите максимальное значение
          */
         int lMax = 0;
-        for (int i = 0; i < 10; i++) {
+        int[] lNumbers2 = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+        for (int i = 0; i < lNumbers2.length; i++) {
             if (i > lMax) {
-                lMax = i;
+                lMax = lNumbers2[i];
             }
 
         }
@@ -568,47 +570,28 @@ public class Main {
         /**
          * 2. Дан список чисел. Суммируйте элементы, пока не встретите отрицательное число
          */
-        int[] lArrayNums = new int[10];
-        lArrayNums[0] = 1;
-        lArrayNums[1] = 2;
-        lArrayNums[2] = 3;
-        lArrayNums[3] = 4;
-        lArrayNums[4] = -5;
-        lArrayNums[5] = 6;
-        lArrayNums[6] = 7;
-        lArrayNums[7] = 8;
-        lArrayNums[8] = 9;
-        lArrayNums[9] = 10;
+        int[] lNumbers3 = {5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5};
         lSum = 0;
-        for (int i = 0; i < 10; i++) {
-            if (lArrayNums[i] < 0) {
+        for (int i = 0; i < lNumbers3.length; i++) {
+            if (lNumbers3[i] < 0) {
                 break;
             }
-            lSum = lSum + lArrayNums[i];
+            lSum = lSum + lNumbers3[i];
         }
         System.out.println("Сумма =  " + lSum);
 
         /**
          * 3. Дан список чисел. Суммируйте элементы, пока сумма не превысит 100
          */
-        //int[] lArrayNums = new int[10];
-        lArrayNums[0] = 10;
-        lArrayNums[1] = 20;
-        lArrayNums[2] = 30;
-        lArrayNums[3] = 40;
-        lArrayNums[4] = 50;
-        lArrayNums[5] = 60;
-        lArrayNums[6] = 70;
-        lArrayNums[7] = 80;
-        lArrayNums[8] = 90;
-        lArrayNums[9] = 100;
+
+        int[] lNumbers4 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120};
         lSum = 0;
-        for (int i = 0; i < 10; i++) {
-            if (lSum + lArrayNums[i] > 100) {
+        for (int i = 0; i < lNumbers4.length; i++) {
+            if (lSum + lNumbers4[i] > 100) {
                 break;
             }
-            System.out.println(lArrayNums[i]);
-            lSum = lSum + lArrayNums[i];
+            System.out.println(lNumbers4[i]);
+            lSum = lSum + lNumbers4[i];
         }
         System.out.println("Сумма =  " + lSum);
 
