@@ -225,9 +225,7 @@ public class Main {
          * Напишите функциональность, которая определяет, является ли год високосным
          */
         int year = 2024;
-        // Начальная дата года year
         LocalDate startDate = LocalDate.of(year, 1, 1);
-        // Конечная дата года year + 1
         LocalDate endDate = LocalDate.of(year + 1, 1, 1);
 
         // Рассчитываем разницу в днях в  year году
@@ -345,10 +343,9 @@ public class Main {
             System.out.println("Стоим");
         } else if (currentColor == yellowColor) {
             System.out.println("Готовимся");
-        }
-        else {
+        } else {
             System.out.println("Светофор сломался");
-             }
+        }
 
         /**
          * Тернарный оператор
@@ -379,8 +376,8 @@ public class Main {
          * 1. Дано число от 1 до 7. Выведите название дня недели. Если число вне диапазона, выведите «Ошибка»
          */
 
-        a = 6;
-        switch (a) {
+        int day = 6;
+        switch (day) {
             case 1:
                 System.out.println("Понедельник");
                 break;
@@ -411,8 +408,8 @@ public class Main {
          * 2. Дано число от 1 до 5. Выведите описание оценки (оцените свою работу)
          */
 
-        a = 3;
-        switch (a) {
+        int schoolGrade = 3;
+        switch (schoolGrade) {
             case 1:
                 System.out.println("Хорошо. Ты старался. Давай подумаем еще");
                 break;
@@ -442,7 +439,6 @@ public class Main {
             if (i % 2 == 0) {
                 lSum = lSum + lNumbers[i];
             }
-
         }
         System.out.println(lSum);
 
@@ -456,7 +452,6 @@ public class Main {
             if (i > lMax) {
                 lMax = lNumbers2[i];
             }
-
         }
         System.out.println(lMax);
 
@@ -466,8 +461,7 @@ public class Main {
          */
         int n = 9;
         for (int i = 1; i < 11; i++) {
-            System.out.println(i + "*" + n + " = " + n * i);
-
+            System.out.println(i + " * " + n + " = " + n * i);
         }
 
         /**
@@ -476,7 +470,6 @@ public class Main {
          */
         for (int i = 10; i > 0; i--) {
             System.out.println(i);
-
         }
 
         /**
@@ -488,7 +481,6 @@ public class Main {
             if (i % 2 == 0) {
                 lCount = lCount + 1;
             }
-
         }
         System.out.println("количество четных чисел в диапазоне от 1 до 50 = " + lCount);
 
@@ -503,7 +495,6 @@ public class Main {
                 System.out.println(z);
                 flag = false;
             }
-
             z++;
         }
 
@@ -517,8 +508,7 @@ public class Main {
         z = 1;
 
         while (z <= n) {
-          lFact = lFact * z;
-
+            lFact = lFact * z;
             z++;
         }
         System.out.println("Факториал = " + lFact);
@@ -549,8 +539,7 @@ public class Main {
         lSum = 0;
         z = 1;
         while (z <= n) {
-                lSum = lSum + z;
-
+            lSum = lSum + z;
             z++;
         }
         System.out.println("Сумма =  " + lSum);
@@ -594,34 +583,5 @@ public class Main {
             lSum = lSum + lNumbers4[i];
         }
         System.out.println("Сумма =  " + lSum);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
